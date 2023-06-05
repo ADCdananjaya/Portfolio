@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav
       className={`w-full h-auto flex fixed top-0 justify-between items-center px-10 py-5 bg-sky-50  text-blue-900 font-poppins ${
-        isScrolled && "border border-t-0 border-x-0"
+        isScrolled && "border border-t-0 border-x-0 shadow-sm"
       }`}
     >
       <a
