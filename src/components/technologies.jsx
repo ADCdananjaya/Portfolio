@@ -1,8 +1,8 @@
-import { technologies } from "../assets";
+import { technologies } from "../constants/const";
 
 const Technologies = () => {
   return (
-    <div className="flex flex-row gap-5 pl-14">
+    <div className="flex flex-wrap flex-row justify-center md:justify-start lg:justify-start md:items-start lg:items-start gap-5 md:pl-14 lg:pl-14">
       {technologies.map((item) => (
         <div
           key={item.id}
