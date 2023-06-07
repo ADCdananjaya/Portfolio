@@ -2,6 +2,13 @@ import assets from "../assets";
 import Technologies from "./technologies";
 
 const HeroSection = () => {
+  const handleClick = () => {
+    const link = document.createElement("a");
+    link.href = assets.resume;
+    link.download = "chamod dananjaya.pdf";
+    link.click();
+  };
+
   return (
     <div
       id="home"
@@ -21,7 +28,10 @@ const HeroSection = () => {
         </div>
         <Technologies />
         <div className="flex items-center md:text-start lg:text-start md:pl-14 lg:pl-14">
-          <button className="font-poppins font-semibold hover:bg-gray-50 bg-white rounded-full px-5 py-2 shadow-md">
+          <button
+            onClick={handleClick}
+            className="font-poppins font-semibold hover:bg-gray-50 bg-white rounded-full px-5 py-2 shadow-md"
+          >
             Resume
           </button>
         </div>
