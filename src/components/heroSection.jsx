@@ -3,7 +3,10 @@ import Technologies from "./technologies";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col md:flex-row lg:flex-row justify-between items-center w-full h-auto bg-sky-50 text-blue-950 px-10 pt-16">
+    <div
+      id="home"
+      className="flex flex-col md:flex-row lg:flex-row justify-between items-center w-full h-auto bg-sky-50 text-blue-950 px-10 pt-16"
+    >
       <div className="w-8/12 h-auto flex flex-col justify-center items-center md:items-start lg:items-start gap-5">
         <div className="flex flex-col mt-5 md:mt-5 lg:mt-0 gap-1 w-auto md:pl-14 lg:pl-14">
           <p className="font-poppins text-center md:text-start lg:text-start text-xl md:pl-2 lg:pl-2">

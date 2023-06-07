@@ -1,12 +1,16 @@
-import reactImage from "../assets/react.png";
-import redux from "../assets/redux.png";
-import tailwind from "../assets/tailwind.png";
-import mongodb from "../assets/mongo.png";
-import node from "../assets/node.png";
-import github from "../assets/github.png";
-import linkedin from "../assets/linkedin.png";
-import innovative from "../assets/innovative.png";
-import learning from "../assets/learning.png";
+import assets from "../assets";
+const {
+  reactImage,
+  redux,
+  tailwind,
+  mongodb,
+  node,
+  github,
+  linkedin,
+  innovative,
+  learning,
+  futurePath,
+} = assets;
 
 const navItems = [
   { id: 0, title: "Home", value: "home" },
@@ -75,6 +79,39 @@ export const aboutConsts = [
           "Passionate about problem-solving and exploring innovative solutions to address real-world problems.",
       },
     ],
+  },
+];
+
+export const projects = [
+  {
+    id: 0,
+    date: "April 01, 2023",
+    image: futurePath,
+    name: "MovieVerse",
+    description:
+      "Discover a world of movies spanning genres, eras, and cultures, with personalized recommendations and seamless streaming. Unleash your inner movie enthusiast and dive into an extraordinary cinematic journey at MovieVerse.",
+    live: "https://www.google.com",
+    code: "https://github.com",
+  },
+  {
+    id: 1,
+    date: "April 01, 2023",
+    image: futurePath,
+    name: "FuturePath",
+    description:
+      "FuturePath is a platform that connects university students with local companies for internships through personalized recommendations and efficient communication tools.",
+    live: "https://www.google.com",
+    code: "https://github.com",
+  },
+  {
+    id: 2,
+    date: "April 01, 2023",
+    image: futurePath,
+    name: "FuturePath",
+    description:
+      "FuturePath is a platform that connects university students with local companies for internships through personalized recommendations and efficient communication tools.",
+    live: "https://www.google.com",
+    code: "https://github.com",
   },
 ];
 

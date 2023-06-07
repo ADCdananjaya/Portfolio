@@ -2,7 +2,10 @@ import AboutItems from "./aboutItems";
 
 const About = () => {
   return (
-    <div className="w-full h-auto items-center md:items-start lg:items-start flex flex-col gap-3 px-20 mt-5 font-poppins">
+    <div
+      id="about"
+      className="w-full h-auto items-center md:items-start lg:items-start flex flex-col gap-3 px-20 mt-5 font-poppins"
+    >
       <p className="text-4xl md:text-5xl lg:text-5xl text-blue-950 font-semibold">
         about.
       </p>

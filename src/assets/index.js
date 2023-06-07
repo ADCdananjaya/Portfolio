@@ -8,6 +8,11 @@ import github from "./github.png";
 import linkedin from "./linkedin.png";
 import menu from "./menu.png";
 import cross from "./cross.png";
+import innovative from "./innovative.png";
+import learning from "./learning.png";
+import futurePath from "./futurePath.png";
+import code from "./code.png";
+import live from "./live.png";
 
 export default {
   reactImage,
@@ -20,4 +25,9 @@ export default {
   linkedin,
   menu,
   cross,
+  innovative,
+  learning,
+  futurePath,
+  code,
+  live,
 };
