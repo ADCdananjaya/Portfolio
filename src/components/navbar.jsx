@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import menu from "../assets/menu.png";
-import cross from "../assets/cross.png";
+import { Link } from "react-scroll";
+import assets from "../assets";
 import NavItems from "./navItems";
 import NavSocials from "./navSocials";
 
@@ -29,17 +29,19 @@ const Navbar = () => {
         isScrolled && "border border-t-0 border-x-0 shadow-sm"
       }`}
     >
-      <a
-        href="#"
-        className="font-semibold hover:text-blue-700 ease-in-out duration-500"
+      <Link
+        className="font-semibold hover:text-blue-700 ease-in-out duration-500 hover:cursor-pointer"
+        to="home"
+        smooth={true}
+        duration={500}
       >
         Chamod
-      </a>
+      </Link>
       <NavItems classes="hidden md:flex lg:flex flex-row gap-8" />
       <NavSocials classes="hidden md:flex lg:flex flex-row gap-10" />
       <div className="flex md:hidden lg:hidden">
         <img
-          src={!isMenuActive ? menu : cross}
+          src={!isMenuActive ? assets.menu : assets.cross}
           className="w-5 hover:cursor-pointer object-cover"
           onClick={() => setMenuActive((prev) => !prev)}
         />
