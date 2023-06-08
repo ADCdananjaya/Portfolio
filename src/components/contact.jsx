@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Joi from "joi-browser";
+import { motion } from "framer-motion";
+import { textContainer, fadeIn } from "../utils/motion";
 import assets from "../assets";
-import { data } from "autoprefixer";
 
 const Contact = () => {
   const [state, setState] = useState({
@@ -43,14 +44,24 @@ const Contact = () => {
   };
 
   return (
-    <div
+    <motion.div
+      variants={textContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
       id="contact"
       className="w-full h-auto items-center md:items-start lg:items-start flex flex-col gap-3 px-20 mt-12 font-poppins"
     >
-      <p className="text-4xl md:text-5xl lg:text-5xl text-blue-950 font-semibold">
+      <motion.p
+        variants={fadeIn("up", "tween", 0.1, 1)}
+        className="text-4xl md:text-5xl lg:text-5xl text-blue-950 font-semibold"
+      >
         contact.
-      </p>
-      <div className="w-full h-auto flex item center justify-center mt-5">
+      </motion.p>
+      <motion.div
+        variants={fadeIn("up", "tween", 0.2, 1)}
+        className="w-full h-auto flex item center justify-center mt-5"
+      >
         <div className="flex flex-row w-full md:w-9/12 lg:w-9/12 h-80 bg-gray-100 rounded-md mb-10 shadow-md">
           <div className="hidden md:flex lg:flex items-center justify-center h-full w-1/2 bg-gray-200 rounded-md">
             <img src={assets.contact} className="object-cover" />
@@ -88,8 +99,8 @@ const Contact = () => {
             </button>
           </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

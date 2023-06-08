@@ -1,11 +1,14 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
 import { projects } from "../constants/const";
 import assets from "../assets";
 
 const WorkItems = () => {
   return (
     <div className="w-full flex flex-row flex-wrap gap-8 justify-center mt-5">
-      {projects.map((item) => (
-        <div
+      {projects.map((item, index) => (
+        <motion.div
+          variants={fadeIn("right", "spring", (index + 1) * 0.5, 0.75)}
           key={item.id}
           className="group w-80 md:w-82 lg:w-82 h-auto bg-gray-100 hover:shadow-lg shadow-md py-3 rounded-md flex flex-col px-5 text-blue-950 font-poppins"
         >
@@ -33,7 +36,7 @@ const WorkItems = () => {
             <p className="text-lg font-semibold">{item.name}</p>
             <p className="text-md text-start">{item.description}</p>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   );

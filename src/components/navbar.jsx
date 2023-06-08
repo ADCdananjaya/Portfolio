@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+import { navVariants } from "../utils/motion";
 import assets from "../assets";
 import NavItems from "./navItems";
 import NavSocials from "./navSocials";
@@ -24,7 +26,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav
+    <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
       className={`w-full h-auto flex fixed top-0 z-10 justify-between items-center px-10 py-5 bg-sky-50  text-blue-900 font-poppins ${
         isScrolled && "border border-t-0 border-x-0 shadow-sm"
       }`}
@@ -54,7 +59,7 @@ const Navbar = () => {
         <NavItems classes="flex items-center md:hidden lg:hidden flex-col gap-3" />
         <NavSocials classes="flex border border-x-0 border-b-0 py-3 md:hidden lg:hidden flex-row gap-10 items-center justify-center" />
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

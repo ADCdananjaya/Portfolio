@@ -1,10 +1,19 @@
+import { motion } from "framer-motion";
+import { textContainer, fadeIn } from "../utils/motion";
 import { aboutConsts } from "../constants/const";
 
 const AboutItems = () => {
   return (
-    <div className="flex flex-col text-blue-950 font-poppins gap-2 md:gap-8 lg:gap-0">
-      {aboutConsts.map((item) => (
-        <div
+    <motion.div
+      variants={textContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="flex flex-col text-blue-950 font-poppins gap-2 md:gap-8 lg:gap-0"
+    >
+      {aboutConsts.map((item, index) => (
+        <motion.div
+          variants={fadeIn("up", "tween", index * 0.5, 1)}
           key={item.id}
           className="flex flex-col md:flex-row lg:flex-row items-center"
         >
@@ -24,9 +33,9 @@ const AboutItems = () => {
               ))}
             </ul>
           </ul>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
