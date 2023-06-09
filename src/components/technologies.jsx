@@ -9,7 +9,7 @@ const Technologies = () => {
         <motion.div
           variants={fadeIn("up", "spring", (index + 1) * 0.5, 0.75)}
           key={item.id}
-          className="flex items-center justify-center bg-white rounded-3xl w-12 md:w-16 lg:w-16 h-12 md:h-16 lg:h-16 shadow-md hover:cursor-pointer hover:bg-gray-50 ease-in-out duration-200"
+          className="flex items-center justify-center hover:bg-lighter-gray bg-light-gray rounded-3xl w-12 md:w-16 lg:w-16 h-12 md:h-16 lg:h-16 shadow-md hover:cursor-pointer ease-in-out duration-200"
           onClick={() => window.open(item.url, "_blank")}
         >
           <img

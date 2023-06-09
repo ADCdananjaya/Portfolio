@@ -23,7 +23,7 @@ const HeroSection = () => {
       whileInView="show"
       viewport={{ once: true }}
       id="home"
-      className="flex flex-col md:flex-row lg:flex-row justify-between items-center w-full h-auto bg-sky-50 text-blue-950 px-10 pt-16"
+      className="flex flex-col md:flex-row lg:flex-row justify-between items-center w-full h-auto bg-dark-gray text-navy-blue px-10 pt-16"
     >
       <div className="w-8/12 h-auto flex flex-col justify-center items-center md:items-start lg:items-start gap-5">
         <div className="flex flex-col mt-5 md:mt-5 lg:mt-0 gap-1 w-auto md:pl-14 lg:pl-14">
@@ -59,7 +59,7 @@ const HeroSection = () => {
           <motion.button
             variants={fadeIn("up", "tween", 0.1, 1)}
             onClick={handleClick}
-            className="font-poppins font-semibold hover:bg-gray-50 bg-white rounded-full px-5 py-2 shadow-md"
+            className="font-poppins font-semibold hover:bg-lighter-gray bg-light-gray rounded-full px-5 py-2 shadow-md"
           >
             Resume
           </motion.button>

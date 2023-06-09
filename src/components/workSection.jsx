@@ -14,13 +14,13 @@ const WorkSection = () => {
     >
       <motion.p
         variants={fadeIn("up", "tween", 0.1, 1)}
-        className="text-4xl md:text-5xl lg:text-5xl text-blue-950 font-semibold"
+        className="text-4xl md:text-5xl lg:text-5xl text-navy-blue font-semibold"
       >
         work.
       </motion.p>
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="text-lg text-center md:text-start lg:text-start md:text-lg lg:text-lg text-blue-950 md:w-9/12 lg:w-9/12"
+        className="text-lg text-center md:text-start lg:text-start md:text-lg lg:text-lg text-navy-blue md:w-9/12 lg:w-9/12"
       >
         The below projects showcase my expertise as a Full Stack Web Developer.
         With captivating designs and robust functionality, I consistently exceed

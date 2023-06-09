@@ -54,7 +54,7 @@ const Contact = () => {
     >
       <motion.p
         variants={fadeIn("up", "tween", 0.1, 1)}
-        className="text-4xl md:text-5xl lg:text-5xl text-blue-950 font-semibold"
+        className="text-4xl md:text-5xl lg:text-5xl text-navy-blue font-semibold"
       >
         contact.
       </motion.p>
@@ -62,8 +62,8 @@ const Contact = () => {
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="w-full h-auto flex item center justify-center mt-5"
       >
-        <div className="flex flex-row w-full md:w-9/12 lg:w-9/12 h-80 bg-gray-100 rounded-md mb-10 shadow-md">
-          <div className="hidden md:flex lg:flex items-center justify-center h-full w-1/2 bg-gray-200 rounded-md">
+        <div className="flex flex-row w-full md:w-9/12 lg:w-9/12 h-80 bg-light-gray rounded-md mb-10 shadow-md">
+          <div className="hidden md:flex lg:flex items-center justify-center h-full w-1/2 rounded-md">
             <img src={assets.contact} className="object-cover" />
           </div>
           <div className="h-full w-full md:w-1/2 lg:w-1/2 flex flex-col gap-4 items-center justify-center py-5">
@@ -72,7 +72,7 @@ const Contact = () => {
               name="title"
               value={state.data.title}
               onChange={handleChange}
-              className="w-10/12 py-3 px-5 rounded-full shadow-md font-poppins"
+              className="w-10/12 py-3 px-5 bg-dark-gray text-lighter-gray rounded-full shadow-md font-poppins placeholder:text-lighter-gray focus:ring-blue-400"
               placeholder="Title"
             />
             <p className="px-3 text-center font-sm italic text-red-500">
@@ -84,7 +84,7 @@ const Contact = () => {
               name="message"
               value={state.data.message}
               onChange={handleChange}
-              className="w-10/12 py-3 px-5 rounded-2xl shadow-md font-poppins"
+              className="w-10/12 py-3 px-5 bg-dark-gray text-lighter-gray rounded-2xl shadow-md font-poppins placeholder:text-lighter-gray"
               placeholder="Message"
             ></textarea>
             <p className="px-3 text-center font-sm italic text-red-500">
@@ -93,7 +93,7 @@ const Contact = () => {
             <button
               disabled={state.errors}
               onClick={handleClick}
-              className="font-poppins font-semibold hover:enabled:bg-gray-50 bg-white rounded-full px-5 py-2 shadow-md disabled:opacity-75 disabled:cursor-not-allowed "
+              className="font-poppins font-semibold hover:enabled:opacity-90 bg-dark-gray text-lighter-gray rounded-full px-5 py-2 shadow-md disabled:opacity-75 disabled:cursor-not-allowed"
             >
               Contact
             </button>

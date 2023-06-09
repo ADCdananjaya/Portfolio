@@ -9,7 +9,7 @@ const AboutItems = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="flex flex-col text-blue-950 font-poppins gap-2 md:gap-8 lg:gap-0"
+      className="flex flex-col text-navy-blue font-poppins gap-2 md:gap-8 lg:gap-0"
     >
       {aboutConsts.map((item, index) => (
         <motion.div

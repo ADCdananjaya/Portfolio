@@ -2,7 +2,7 @@ import components from "./components/index";
 
 function App() {
   return (
-    <div>
+    <div className="bg-lighter-gray">
       <components.Navbar />
       <components.HeroSection />
       <components.About />

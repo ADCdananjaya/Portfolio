@@ -14,13 +14,13 @@ const About = () => {
     >
       <motion.p
         variants={fadeIn("up", "tween", 0.1, 1)}
-        className="text-4xl md:text-5xl lg:text-5xl text-blue-950 font-semibold"
+        className="text-4xl md:text-5xl lg:text-5xl text-navy-blue font-semibold"
       >
         about.
       </motion.p>
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="text-lg text-center md:text-start lg:text-start md:text-lg lg:text-lg text-blue-950 md:w-9/12 lg:w-9/12"
+        className="text-lg text-center md:text-start lg:text-start md:text-lg lg:text-lg text-navy-blue md:w-9/12 lg:w-9/12"
       >
         I'm pursuing a BICT degree in software systems at the University of
         Kelaniya, expanding my knowledge of software development principles.
