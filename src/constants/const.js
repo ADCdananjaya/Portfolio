@@ -10,6 +10,10 @@ const {
   innovative,
   learning,
   futurePath,
+  githubDark,
+  linkedinDark,
+  innovativeDark,
+  learningDark,
 } = assets;
 
 const navItems = [
@@ -27,10 +31,16 @@ export const technologies = [
 ];
 
 export const socialLinks = [
-  { id: 0, image: github, url: "https://github.com/ADCdananjaya" },
+  {
+    id: 0,
+    imageLight: github,
+    imageDark: githubDark,
+    url: "https://github.com/ADCdananjaya",
+  },
   {
     id: 1,
-    image: linkedin,
+    imageLight: linkedin,
+    imageDark: linkedinDark,
     url: "https://www.linkedin.com/in/chamod-dananjaya-b8ab6b211/",
   },
 ];
@@ -38,7 +48,8 @@ export const socialLinks = [
 export const aboutConsts = [
   {
     id: 0,
-    image: innovative,
+    imageLight: innovative,
+    imageDark: innovativeDark,
     title: "Passionate about Building Innovative Web Solutions",
     descriptions: [
       {
@@ -60,7 +71,8 @@ export const aboutConsts = [
   },
   {
     id: 1,
-    image: learning,
+    imageLight: learning,
+    imageDark: learningDark,
     title: "Continuous Learning and Growth",
     descriptions: [
       {

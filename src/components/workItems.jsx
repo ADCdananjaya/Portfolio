@@ -10,7 +10,7 @@ const WorkItems = () => {
         <motion.div
           variants={fadeIn("right", "spring", (index + 1) * 0.5, 0.75)}
           key={item.id}
-          className="group w-80 md:w-82 lg:w-82 h-auto bg-light-gray hover:shadow-lg shadow-md py-3 rounded-md flex flex-col px-5 text-navy-blue font-poppins"
+          className="group w-80 md:w-82 lg:w-82 h-auto bg-light-gray dark:bg-light-blue hover:shadow-lg shadow-md py-3 rounded-md flex flex-col px-5 text-navy-blue dark:text-light-gray font-poppins"
         >
           <div className="relative flex items-center justify-center">
             <img

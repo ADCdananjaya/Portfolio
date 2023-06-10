@@ -50,11 +50,11 @@ const Contact = () => {
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
       id="contact"
-      className="w-full h-auto items-center md:items-start lg:items-start flex flex-col gap-3 px-20 mt-12 font-poppins"
+      className="w-full h-auto items-center md:items-start lg:items-start flex flex-col gap-3 px-20 mt-12 font-poppins bg-lighter-gray dark:bg-navy-blue"
     >
       <motion.p
         variants={fadeIn("up", "tween", 0.1, 1)}
-        className="text-4xl md:text-5xl lg:text-5xl text-navy-blue font-semibold"
+        className="text-4xl md:text-5xl lg:text-5xl text-navy-blue dark:text-light-gray font-semibold"
       >
         contact.
       </motion.p>
@@ -62,9 +62,16 @@ const Contact = () => {
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="w-full h-auto flex item center justify-center mt-5"
       >
-        <div className="flex flex-row w-full md:w-9/12 lg:w-9/12 h-80 bg-light-gray rounded-md mb-10 shadow-md">
+        <div className="flex flex-row w-full md:w-9/12 lg:w-9/12 h-80 bg-light-gray dark:bg-light-blue rounded-md mb-10 shadow-md">
           <div className="hidden md:flex lg:flex items-center justify-center h-full w-1/2 rounded-md">
-            <img src={assets.contact} className="object-cover" />
+            <img
+              src={assets.contact}
+              className="w-8/12 object-cover dark:hidden"
+            />
+            <img
+              src={assets.contactDark}
+              className="h-4/5 hidden object-cover dark:block"
+            />
           </div>
           <div className="h-full w-full md:w-1/2 lg:w-1/2 flex flex-col gap-4 items-center justify-center py-5">
             <input
@@ -75,7 +82,7 @@ const Contact = () => {
               className="w-10/12 py-3 px-5 bg-dark-gray text-lighter-gray rounded-full shadow-md font-poppins placeholder:text-lighter-gray focus:ring-blue-400"
               placeholder="Title"
             />
-            <p className="px-3 text-center font-sm italic text-red-500">
+            <p className="px-3 text-center font-sm italic text-red-500 dark:text-red-300">
               {state.errors && state.errors.title}
             </p>
             <textarea
@@ -87,7 +94,7 @@ const Contact = () => {
               className="w-10/12 py-3 px-5 bg-dark-gray text-lighter-gray rounded-2xl shadow-md font-poppins placeholder:text-lighter-gray"
               placeholder="Message"
             ></textarea>
-            <p className="px-3 text-center font-sm italic text-red-500">
+            <p className="px-3 text-center font-sm italic text-red-500 dark:text-red-300">
               {state.errors && state.errors.message}
             </p>
             <button

@@ -6,7 +6,7 @@ const NavItems = (props) => {
     <div className={props.classes}>
       {constants.navItems.map((item) => (
         <Link
-          className="hover:text-light-blue ease-in-out duration-500 hover:cursor-pointer"
+          className="hover:text-light-blue dark:hover:text-lighter-gray ease-in-out duration-500 hover:cursor-pointer"
           to={item.value}
           key={item.id}
           smooth={true}

@@ -9,7 +9,7 @@ const AboutItems = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="flex flex-col text-navy-blue font-poppins gap-2 md:gap-8 lg:gap-0"
+      className="flex flex-col text-navy-blue dark:text-light-gray font-poppins gap-2 md:gap-8 lg:gap-0"
     >
       {aboutConsts.map((item, index) => (
         <motion.div
@@ -17,7 +17,14 @@ const AboutItems = () => {
           key={item.id}
           className="flex flex-col md:flex-row lg:flex-row items-center"
         >
-          <img src={item.image} className="w-60 object-cover" />
+          <img
+            src={item.imageLight}
+            className="w-60 object-cover dark:hidden"
+          />
+          <img
+            src={item.imageDark}
+            className="hidden w-36 object-cover opacity-90 dark:block"
+          />
           <ul className="flex flex-col items-center md:items-start lg:items-start gap-3">
             <li className="text-xl font-semibold list-disc list-inside text-center md:text-start lg:text-start w-11/12 md:w-auto lg:w-auto">
               {item.title}

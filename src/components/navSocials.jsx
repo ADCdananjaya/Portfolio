@@ -1,15 +1,34 @@
+import assets from "../assets";
 import { socialLinks } from "../constants/const";
+import { setTheme } from "../services/themeService";
 
-const NavSocials = ({ classes }) => {
+const NavSocials = ({ classes, setDarkTheme, isDarkTheme }) => {
+  const handleClick = () => {
+    setDarkTheme((prev) => !prev);
+    setTheme(isDarkTheme);
+  };
+
   return (
     <div className={classes}>
-      {socialLinks.map((item) => (
+      <button onClick={handleClick}>
         <img
-          key={item.id}
-          src={item.image}
+          src={isDarkTheme ? assets.sun : assets.moon}
           className="w-5 hover:cursor-pointer object-cover"
-          onClick={() => window.open(item.url, "_blank")}
         />
+      </button>
+      {socialLinks.map((item) => (
+        <div key={item.id}>
+          <img
+            src={item.imageLight}
+            className="w-5 hover:cursor-pointer object-cover dark:hidden"
+            onClick={() => window.open(item.url, "_blank")}
+          />
+          <img
+            src={item.imageDark}
+            className="hidden w-5 hover:cursor-pointer object-cover dark:block"
+            onClick={() => window.open(item.url, "_blank")}
+          />
+        </div>
       ))}
     </div>
   );
