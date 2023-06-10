@@ -23,7 +23,7 @@ const HeroSection = () => {
       whileInView="show"
       viewport={{ once: true }}
       id="home"
-      className="flex flex-col md:flex-row lg:flex-row justify-between items-center w-full h-auto bg-dark-gray dark:bg-light-blue text-navy-blue dark:text-light-gray px-10 pt-16"
+      className="flex flex-col md:flex-row lg:flex-row justify-between items-center w-full h-auto min-h-screen md:h-screen lg:h-screen bg-dark-gray dark:bg-light-blue text-navy-blue dark:text-light-gray px-10 pt-16"
     >
       <div className="w-8/12 h-auto flex flex-col justify-center items-center md:items-start lg:items-start gap-5">
         <div className="flex flex-col mt-5 md:mt-5 lg:mt-0 gap-1 w-auto md:pl-14 lg:pl-14">
@@ -68,7 +68,7 @@ const HeroSection = () => {
       <motion.img
         variants={fadeIn("up", "tween", 0.1, 1)}
         src={assets.chamod}
-        className="object-cover h-full w-[300px] md:w-[550px] lg:w-[550px]"
+        className="object-cover h-full w-[300px] md:w-[55%] lg:w-[46%] xl:w-[43%]"
       />
     </motion.div>
   );
