@@ -29,7 +29,7 @@ const AboutItems = () => {
             <li className="text-xl font-semibold list-disc list-inside text-center md:text-start lg:text-start w-11/12 md:w-auto lg:w-auto">
               {item.title}
             </li>
-            <ul className="md:pl-8 lg:pl-8 flex flex-col items-center md:items-start lg:items-start gap-2 w-full">
+            <ul className="w-10/12 md:w-full md:pl-8 lg:pl-8 flex flex-col items-center md:items-start lg:items-start gap-2">
               {item.descriptions.map((des) => (
                 <li
                   key={des.id}

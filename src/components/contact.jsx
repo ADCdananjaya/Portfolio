@@ -50,7 +50,7 @@ const Contact = () => {
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
       id="contact"
-      className="w-full h-auto items-center md:items-start lg:items-start flex flex-col gap-3 px-20 mt-12 font-poppins bg-lighter-gray dark:bg-navy-blue"
+      className="w-full h-auto items-center md:items-start lg:items-start flex flex-col gap-3 px-0 md:px-20 mt-12 font-poppins bg-lighter-gray dark:bg-navy-blue"
     >
       <motion.p
         variants={fadeIn("up", "tween", 0.1, 1)}
@@ -62,7 +62,7 @@ const Contact = () => {
         variants={fadeIn("up", "tween", 0.2, 1)}
         className="w-full h-auto flex item center justify-center mt-5"
       >
-        <div className="flex flex-row w-full md:w-9/12 lg:w-9/12 h-80 bg-light-gray dark:bg-light-blue rounded-md mb-10 shadow-md">
+        <div className="flex flex-row w-10/12 md:w-9/12 lg:w-9/12 h-80 bg-light-gray dark:bg-light-blue rounded-md mb-10 shadow-md">
           <div className="hidden md:flex lg:flex items-center justify-center h-full w-1/2 rounded-md">
             <img
               src={assets.contact}
