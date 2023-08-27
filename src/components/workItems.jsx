@@ -19,11 +19,13 @@ const WorkItems = () => {
             />
             <div className="absolute inset-0 bg-black rounded-lg opacity-0 group-hover:opacity-70 transition-opacity duration-300 z-0"></div>
             <div className="absolute opacity-0 group-hover:opacity-100 flex flx-row gap-5">
-              <img
-                src={assets.live}
-                className="w-10 object-cover hover:cursor-pointer hover:opacity-75"
-                onClick={() => window.open(item.live, "_blank")}
-              />
+              {item.live && (
+                <img
+                  src={assets.live}
+                  className="w-10 object-cover hover:cursor-pointer hover:opacity-75"
+                  onClick={() => window.open(item.live, "_blank")}
+                />
+              )}
               <img
                 src={assets.code}
                 className="h-10 object-cover hover:cursor-pointer hover:opacity-75"
