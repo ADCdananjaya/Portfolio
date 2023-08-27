@@ -17,6 +17,7 @@ import innovativeDark from "./images/innovative-dark.png";
 import learning from "./images/learning.png";
 import learningDark from "./images/learning-dark.png";
 import futurePath from "./images/futurePath.png";
+import coinWatch from "./images/coinWatch.png";
 import code from "./images/code.png";
 import live from "./images/live.png";
 import contact from "./images/contact.png";
@@ -39,6 +40,7 @@ export default {
   innovative,
   learning,
   futurePath,
+  coinWatch,
   code,
   live,
   contact,

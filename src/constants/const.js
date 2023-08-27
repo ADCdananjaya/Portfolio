@@ -10,6 +10,7 @@ const {
   innovative,
   learning,
   futurePath,
+  coinWatch,
   githubDark,
   linkedinDark,
   innovativeDark,
@@ -97,34 +98,34 @@ export const aboutConsts = [
 export const projects = [
   {
     id: 0,
-    date: "April 01, 2023",
-    image: futurePath,
-    name: "MovieVerse",
+    date: "August 17, 2023",
+    image: coinWatch,
+    name: "CoinWatch",
     description:
       "Discover a world of movies spanning genres, eras, and cultures, with personalized recommendations and seamless streaming. Unleash your inner movie enthusiast and dive into an extraordinary cinematic journey at MovieVerse.",
-    live: "https://www.google.com",
-    code: "https://github.com",
+    live: "https://coin-watch-eight.vercel.app",
+    code: "https://github.com/ADCdananjaya/CoinWatch",
   },
-  {
-    id: 1,
-    date: "April 01, 2023",
-    image: futurePath,
-    name: "FuturePath",
-    description:
-      "FuturePath is a platform that connects university students with local companies for internships through personalized recommendations and efficient communication tools.",
-    live: "https://www.google.com",
-    code: "https://github.com",
-  },
-  {
-    id: 2,
-    date: "April 01, 2023",
-    image: futurePath,
-    name: "FuturePath",
-    description:
-      "FuturePath is a platform that connects university students with local companies for internships through personalized recommendations and efficient communication tools.",
-    live: "https://www.google.com",
-    code: "https://github.com",
-  },
+  // {
+  //   id: 1,
+  //   date: "April 01, 2023",
+  //   image: futurePath,
+  //   name: "FuturePath",
+  //   description:
+  //     "FuturePath is a platform that connects university students with local companies for internships through personalized recommendations and efficient communication tools.",
+  //   live: "https://www.google.com",
+  //   code: "https://github.com",
+  // },
+  // {
+  //   id: 2,
+  //   date: "April 01, 2023",
+  //   image: futurePath,
+  //   name: "FuturePath",
+  //   description:
+  //     "FuturePath is a platform that connects university students with local companies for internships through personalized recommendations and efficient communication tools.",
+  //   live: "https://www.google.com",
+  //   code: "https://github.com",
+  // },
 ];
 
 export default { navItems };
