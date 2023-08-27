@@ -18,6 +18,7 @@ import learning from "./images/learning.png";
 import learningDark from "./images/learning-dark.png";
 import futurePath from "./images/futurePath.png";
 import coinWatch from "./images/coinWatch.png";
+import movieVerse from "./images/movieVerse.png";
 import code from "./images/code.png";
 import live from "./images/live.png";
 import contact from "./images/contact.png";
@@ -41,6 +42,7 @@ export default {
   learning,
   futurePath,
   coinWatch,
+  movieVerse,
   code,
   live,
   contact,

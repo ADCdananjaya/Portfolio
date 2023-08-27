@@ -11,6 +11,7 @@ const {
   learning,
   futurePath,
   coinWatch,
+  movieVerse,
   githubDark,
   linkedinDark,
   innovativeDark,
@@ -116,16 +117,16 @@ export const projects = [
     live: "",
     code: "https://github.com/ADCdananjaya/FuturePath",
   },
-  // {
-  //   id: 2,
-  //   date: "April 01, 2023",
-  //   image: futurePath,
-  //   name: "FuturePath",
-  //   description:
-  //     "FuturePath is a platform that connects university students with local companies for internships through personalized recommendations and efficient communication tools.",
-  //   live: "https://www.google.com",
-  //   code: "https://github.com",
-  // },
+  {
+    id: 2,
+    date: "June 12, 2023",
+    image: movieVerse,
+    name: "MovieVerse",
+    description:
+      "MovieVerse is a MERN website, simplifies accessing a diverse collection of movies and TV shows. Seamlessly navigate and enjoy the latest cinematic content with user-friendly ease.",
+    live: "",
+    code: "https://github.com/ADCdananjaya/MovieVerse",
+  },
 ];
 
 export default { navItems };
