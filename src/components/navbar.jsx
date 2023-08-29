@@ -62,10 +62,12 @@ const Navbar = ({ setDarkTheme, isDarkTheme }) => {
             onClick={() => setMenuActive((prev) => !prev)}
           />
         </div>
+      </motion.nav>
+      <div
+        className={`${isMenuActive ? "fixed" : "hidden"} w-full h-auto z-20`}
+      >
         <div
-          className={`${
-            isMenuActive ? "flex" : "hidden"
-          } flex-col md:hidden lg:hidden absolute w-40 h-48 bg-lighter-gray dark:bg-navy-blue top-16 right-5 rounded-md justify-between pt-5 shadow-md sidebar`}
+          className={`flex text-navy-blue dark:text-light-gray font-poppins flex-col md:hidden lg:hidden absolute w-40 h-48 bg-lighter-gray dark:bg-navy-blue top-16 right-5 rounded-md justify-between pt-5 shadow-md sidebar`}
         >
           <NavItems classes="flex items-center md:hidden lg:hidden flex-col gap-3" />
           <NavSocials
@@ -74,7 +76,7 @@ const Navbar = ({ setDarkTheme, isDarkTheme }) => {
             classes="flex border border-x-0 border-b-0 py-3 md:hidden lg:hidden flex-row gap-10 items-center justify-center"
           />
         </div>
-      </motion.nav>
+      </div>
     </div>
   );
 };
