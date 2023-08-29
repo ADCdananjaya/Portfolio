@@ -109,7 +109,7 @@ export const projects = [
   },
   {
     id: 1,
-    date: "April 01, 2023",
+    date: "February 03, 2023",
     image: futurePath,
     name: "FuturePath",
     description:
